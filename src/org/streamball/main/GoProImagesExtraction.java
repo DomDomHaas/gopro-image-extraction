@@ -31,6 +31,11 @@ public class GoProImagesExtraction {
 	public static GoProHelper helper = api.getHelper();
 
 	public static DownloadItemsThread downloadItemsThread = null;
+
+	private static boolean downloadImages = false;
+	private static boolean downloaderEnabled = false;
+	private static boolean startExtractionAfterDownload = false;
+
 	public static TrayIcon trayIcon = null;
 
 	public static void main(String[] args) {
@@ -44,11 +49,21 @@ public class GoProImagesExtraction {
 				Double.parseDouble((String) config.get("imageExtractIntervall"));
 		String imageCollectionPath = (String) config.get("imageCollectionFolder");
 
-		String directLoadImageStr = (String) config.get("directLoadImages");
-		boolean directLoadImages = false;
+		String downloadImagesStr = (String) config.get("downloadImages");
 
-		if (directLoadImageStr.toLowerCase().equals("true")) {
-			directLoadImages = true;
+		if (downloadImagesStr.toLowerCase().equals("true")) {
+			downloadImages = true;
+		}
+
+		String downloaderEnabledStr = (String) config.get("downloaderEnabled");
+		if (downloaderEnabledStr.toLowerCase().equals("true")) {
+			downloaderEnabled = true;
+		}
+
+		String startExtractionAfterDownloadStr =
+				(String) config.get("startExtractionAfterDownload");
+		if (startExtractionAfterDownloadStr.toLowerCase().equals("true")) {
+			startExtractionAfterDownload = true;
 		}
 
 		// setup logFile
@@ -70,21 +85,25 @@ public class GoProImagesExtraction {
 			String startUpMode = (String) config.get("startUpMode");
 			setStartUpMode(startUpMode);
 
-			// start thread for checking new files
-			try {
+			if (downloaderEnabled) {
+				// start thread for checking new files
+				try {
 
-				downloadItemsThread =
-						new DownloadItemsThread(trayIcon, imageCollectionPath,
-								checkNewFilesIntervall, imageExtractIntervall, directLoadImages);
+					downloadItemsThread =
+							new DownloadItemsThread(trayIcon, imageCollectionPath,
+									checkNewFilesIntervall, imageExtractIntervall,
+									startExtractionAfterDownload, downloadImages);
 
-				downloadItemsThread.start();
-				trayIcon.displayMessage("StreamBall App", "Started Downloading!",
-						TrayIcon.MessageType.WARNING);
+					downloadItemsThread.start();
+					trayIcon.displayMessage("StreamBall App", "Started Downloading!",
+							TrayIcon.MessageType.WARNING);
 
-			} catch (Exception e) {
-				System.out.println("Error in ImageEffect:  " + e.getMessage());
-				trayIcon.displayMessage("ImageEffect Error",
-						"ImageEffect had an Error: " + e.getMessage(), TrayIcon.MessageType.ERROR);
+				} catch (Exception e) {
+					System.out.println("Error in ImageEffect:  " + e.getMessage());
+					trayIcon.displayMessage("ImageEffect Error",
+							"ImageEffect had an Error: " + e.getMessage(),
+							TrayIcon.MessageType.ERROR);
+				}
 			}
 		} else {
 			System.out.println("Couldn't start the cam ");

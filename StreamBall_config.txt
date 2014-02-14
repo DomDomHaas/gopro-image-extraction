@@ -1,10 +1,12 @@
 { "printFileName" : "etikett.dat" ,
 "logFileName" : "StreamBall_log.txt" ,
 "checkIntervall" : "2000" ,
-"imageExtractIntervall" : "0.25", 
 "logFileSizeInMB" : "5" ,
 "goProImageFolder" : "http://10.5.5.9:8080//DCIM//100GOPRO//",
 "imageCollectionFolder" : "D:\\Program Files (x86)\\eclipse_workspaces\\newserv\\StreamBall\\ImageCollection",
-"directLoadImages" : "false",
+"downloaderEnabled" : "true",
+"downloadImages" : "false",
+"startExtractionAfterDownload" : "true",
+"imageExtractIntervall" : "0.25", 
 "startUpMode" : "recordMode"
 }

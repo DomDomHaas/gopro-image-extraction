@@ -34,19 +34,22 @@ public class DownloadItemsThread extends Thread {
 	private int checkIntervall = 5000;
 	private double imageExtractIntervall = 0;
 	private URL goProURL;
+	private boolean startExtractionAfterDownload = false;
 	private boolean directLoadImages = false;
 
 	private ArrayList<String> alreadyDownloadedItemList = new ArrayList<String>();
 	private LinkedHashMap<String, Integer> camFiles = new LinkedHashMap<String, Integer>();
 
 	public DownloadItemsThread(TrayIcon trayIcon, String imageCollectionPath, int checkIntervall,
-			double imageExtractIntervall, boolean directLoadImages) {
+			double imageExtractIntervall, boolean startExtractionAfterDownload,
+			boolean directLoadImages) {
 
 		this.trayIcon = trayIcon;
 
 		this.imageCollectionPath = imageCollectionPath;
 		this.checkIntervall = checkIntervall;
 		this.imageExtractIntervall = imageExtractIntervall;
+		this.startExtractionAfterDownload = startExtractionAfterDownload;
 		this.directLoadImages = directLoadImages;
 
 		try {
@@ -196,7 +199,7 @@ public class DownloadItemsThread extends Thread {
 									alreadyDownloadedItemList.add(fileToDownload);
 
 									// start the image Extraction or PostEffect
-									if (mp4LinksOnly) {
+									if (mp4LinksOnly && startExtractionAfterDownload) {
 										// start decoding frames per xuggler
 										ImageExtractionThread extractImages =
 												new ImageExtractionThread(destFilePath,
