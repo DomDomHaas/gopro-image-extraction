@@ -20,9 +20,14 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+/**
+ * @author Dominik Haas
+ * 
+ *         Downloads Items (Videos or Images) from the GoPro via Wifi
+ * 
+ */
 public class DownloadItemsThread extends Thread {
 
-	private GoProApi api;
 	private TrayIcon trayIcon;
 	private String imageCollectionPath = "";
 	// default 5s
@@ -34,10 +39,9 @@ public class DownloadItemsThread extends Thread {
 	private ArrayList<String> alreadyDownloadedItemList = new ArrayList<String>();
 	private LinkedHashMap<String, Integer> camFiles = new LinkedHashMap<String, Integer>();
 
-	public DownloadItemsThread(GoProApi api, TrayIcon trayIcon, String imageCollectionPath,
-			int checkIntervall, double imageExtractIntervall, boolean directLoadImages) {
+	public DownloadItemsThread(TrayIcon trayIcon, String imageCollectionPath, int checkIntervall,
+			double imageExtractIntervall, boolean directLoadImages) {
 
-		this.api = api;
 		this.trayIcon = trayIcon;
 
 		this.imageCollectionPath = imageCollectionPath;
@@ -47,12 +51,12 @@ public class DownloadItemsThread extends Thread {
 
 		try {
 			if (directLoadImages) {
-				goProURL = new URL("http://" + api._10_5_5_9 + ":8080/DCIM/100GOPRO");
+				goProURL = new URL("http://" + GoProApi._10_5_5_9 + ":8080/DCIM/100GOPRO");
 			} else {
-				goProURL = new URL("http://" + api._10_5_5_9 + ":8080/videos/DCIM/100GOPRO");
+				goProURL = new URL("http://" + GoProApi._10_5_5_9 + ":8080/videos/DCIM/100GOPRO");
 			}
 		} catch (MalformedURLException e) {
-			System.out.println("Error in the URL: " + api._10_5_5_9);
+			System.out.println("Error in the URL: " + GoProApi._10_5_5_9);
 			e.printStackTrace();
 		}
 
@@ -92,29 +96,6 @@ public class DownloadItemsThread extends Thread {
 			} else {
 				downloadLatestFile(true);
 			}
-
-			// String overviewHTML = loadHTMLOverview(goProURL);
-			//
-			// if (overviewHTML != null) {
-
-			// String[] fileNames = null;
-			//
-			// if (directLoadImages == true) {
-			// // download only images
-			// fileNames = null;
-			// getFileNames(overviewHTML, false);
-			// directDownloadItems(fileNames, true, false);
-			// } else {
-			// // download mp4 and extract images
-			// fileNames = null;
-			// getFileNames(overviewHTML, true);
-			// directDownloadItems(fileNames, true, true);
-			// }
-
-			// } else {
-			// System.out.println("DownloadItemsThread " + super.getName() +
-			// " noting found");
-			// }
 
 			try {
 

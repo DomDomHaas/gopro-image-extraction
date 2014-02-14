@@ -74,7 +74,7 @@ public class GoProImagesExtraction {
 			try {
 
 				downloadItemsThread =
-						new DownloadItemsThread(api, trayIcon, imageCollectionPath,
+						new DownloadItemsThread(trayIcon, imageCollectionPath,
 								checkNewFilesIntervall, imageExtractIntervall, directLoadImages);
 
 				downloadItemsThread.start();

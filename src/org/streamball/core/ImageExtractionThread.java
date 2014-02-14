@@ -16,10 +16,19 @@ import com.xuggle.xuggler.IVideoPicture;
 import com.xuggle.xuggler.IVideoResampler;
 import com.xuggle.xuggler.Utils;
 
+/**
+ * @author Dominik Haas
+ * 
+ *         This Thread tries to extract several frames out of a target video.
+ *         Tries because it is depending on the {@link IVideoPicture} to be
+ *         complete.
+ * 
+ *         Only tested with mp4 files created by a GoPro Hero 3+ (Silver
+ *         Edition)
+ **/
 public class ImageExtractionThread extends Thread {
 
 	/** The number of seconds between frames. */
-
 	public static double SECONDS_BETWEEN_FRAMES = 0.5;
 
 	/** The number of nano-seconds between frames. */
@@ -28,7 +37,6 @@ public class ImageExtractionThread extends Thread {
 			(long) (Global.DEFAULT_PTS_PER_SECOND * SECONDS_BETWEEN_FRAMES);
 
 	/** Time of last frame write. */
-
 	private static long mLastPtsWrite = Global.NO_PTS;
 
 	private String fileName;
@@ -38,10 +46,15 @@ public class ImageExtractionThread extends Thread {
 
 	private boolean isExtracting = false;
 
-	public ImageExtractionThread(String filename, double imageExtractIntervall) {
+	/**
+	 * @param filename
+	 *            String path to the video file.
+	 * @param imageExtractPerSecond
+	 */
+	public ImageExtractionThread(String filename, double imageExtractPerSecond) {
 
 		this.fileName = filename;
-		SECONDS_BETWEEN_FRAMES = imageExtractIntervall;
+		SECONDS_BETWEEN_FRAMES = imageExtractPerSecond;
 
 		String noExtension = fileName.substring(0, fileName.indexOf("."));
 
