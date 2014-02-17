@@ -4,6 +4,7 @@ import java.awt.TrayIcon;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -40,6 +41,8 @@ public class DownloadItemsThread extends Thread {
 
 	private ArrayList<String> alreadyDownloadedItemList = new ArrayList<String>();
 	private LinkedHashMap<String, Integer> camFiles = new LinkedHashMap<String, Integer>();
+
+	private ImageExtractionManager extractionManager = new ImageExtractionManager();
 
 	public DownloadItemsThread(TrayIcon trayIcon, String imageCollectionPath, int checkIntervall,
 			double imageExtractIntervall, boolean startExtractionAfterDownload,
@@ -92,6 +95,8 @@ public class DownloadItemsThread extends Thread {
 	@Override
 	public void run() {
 
+		extractionManager.start();
+
 		for (;;) {
 
 			System.out.println("DownloadItemsThread " + super.getName()
@@ -125,14 +130,25 @@ public class DownloadItemsThread extends Thread {
 		InputStreamReader urlStream = null;
 		String overviewHtml = null;
 
+		HttpURLConnection conn = null;
+
 		try {
-			urlStream = new InputStreamReader(url.openStream(), "UTF-8");
+
+			conn = (HttpURLConnection) url.openConnection();
+			conn.setConnectTimeout(30000);
+			conn.setReadTimeout(30000);
+			conn.setDoInput(true);
+			InputStream is = conn.getInputStream();
+
+			// urlStream = new InputStreamReader(url.openStream(), "UTF-8");
+			urlStream = new InputStreamReader(is, "UTF-8");
 			reader = new BufferedReader(urlStream);
 
-			String line;
+			String line = reader.readLine();
 
-			while ((line = reader.readLine()) != null) {
+			while (line != null) {
 				overviewHtml += line;
+				line = reader.readLine();
 			}
 
 		} catch (IOException e) {
@@ -153,6 +169,10 @@ public class DownloadItemsThread extends Thread {
 				} catch (IOException e) {
 					System.out.println("urlStream couldn't close... to bad! : " + e.getMessage());
 				}
+			}
+
+			if (conn != null) {
+				conn.disconnect();
 			}
 		}
 
@@ -219,7 +239,9 @@ public class DownloadItemsThread extends Thread {
 										ImageExtractionThread extractImages =
 												new ImageExtractionThread(destFilePath,
 														imageExtractIntervall);
-										extractImages.start();
+
+										// delegate to ManagerThread
+										extractionManager.addThread(extractImages);
 
 									} else {
 										// start thread for image effect
@@ -528,9 +550,19 @@ public class DownloadItemsThread extends Thread {
 
 		File destination = new File(destFilePath);
 
+		Date before = new Date();
 		try {
 			FileUtils.copyURLToFile(source, destination);
+			Date after = new Date();
 			destination = null;
+
+			long millis = (after.getTime() - before.getTime());
+
+			// trayIcon.displayMessage("DownloadItem Finished", "Downloaded " +
+			// itemDownloaded
+			// + " new Item in " + secs + " secs", TrayIcon.MessageType.INFO);
+			System.out.println(before.getTime() + " Downloaded " + source + " in " + millis
+					+ " millis");
 			return true;
 
 		} catch (IOException e) {

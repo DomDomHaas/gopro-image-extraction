@@ -78,6 +78,14 @@ public class GoProImagesExtraction {
 		// starting with Timelapse
 		if (startCam()) {
 
+			// give it 4s to start up
+			try {
+				Thread.sleep(4000);
+			} catch (InterruptedException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+
 			loadTheStartUpMode();
 
 			if (downloaderEnabled) {
@@ -202,6 +210,12 @@ public class GoProImagesExtraction {
 			doBurstMode();
 		}
 
+		// make a short sleep to let the cam change the mode!
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e1) {
+			e1.printStackTrace();
+		}
 	}
 
 	@Override
@@ -249,7 +263,9 @@ public class GoProImagesExtraction {
 	private static boolean startCam() {
 		boolean ok = false;
 		try {
-			ok = api.powerAndWaitUntilIsReady();
+			// ok = api.powerAndWaitUntilIsReady();
+			api.powerOn();
+			ok = true;
 			trayIcon.displayMessage("StreamBall App", "GoPro started", TrayIcon.MessageType.WARNING);
 
 		} catch (Exception e) {
@@ -295,7 +311,7 @@ public class GoProImagesExtraction {
 					TrayIcon.MessageType.INFO);
 
 		} catch (Exception e) {
-			System.out.println("Error burst mode:  " + e.getMessage());
+			System.out.println("Error Recording mode:  " + e.getMessage());
 			trayIcon.displayMessage("Error", "Set Recoring Mode: " + e.getMessage(),
 					TrayIcon.MessageType.ERROR);
 		}

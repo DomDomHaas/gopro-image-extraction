@@ -33,8 +33,7 @@ public class ImageExtractionThread extends Thread {
 
 	/** The number of nano-seconds between frames. */
 
-	public static final long NANO_SECONDS_BETWEEN_FRAMES =
-			(long) (Global.DEFAULT_PTS_PER_SECOND * SECONDS_BETWEEN_FRAMES);
+	public long NANO_SECONDS_BETWEEN_FRAMES = 0;
 
 	/** Time of last frame write. */
 	private static long mLastPtsWrite = Global.NO_PTS;
@@ -44,7 +43,8 @@ public class ImageExtractionThread extends Thread {
 	private String subFolder;
 	private long filecounter = 0;
 
-	private boolean isExtracting = false;
+	public volatile boolean isExtracting = false;
+	public volatile boolean extractionFinished = false;
 
 	/**
 	 * @param filename
@@ -55,6 +55,8 @@ public class ImageExtractionThread extends Thread {
 
 		this.fileName = filename;
 		SECONDS_BETWEEN_FRAMES = imageExtractPerSecond;
+		NANO_SECONDS_BETWEEN_FRAMES =
+				(long) (Global.DEFAULT_PTS_PER_SECOND * SECONDS_BETWEEN_FRAMES);
 
 		String noExtension = fileName.substring(0, fileName.indexOf("."));
 
@@ -72,18 +74,15 @@ public class ImageExtractionThread extends Thread {
 
 	@Override
 	public void run() {
-		super.run();
+
+		System.out.println(super.getName() + " " + this.getClass() + " started ");
 
 		decodeVideoFile(fileName);
 		isExtracting = false;
+		extractionFinished = true;
 
-		// start thread for image effect
-
-		// find the actual image file names
-		// create a loop for every file...
-		// ImageEffectThread postEffect = new ImageEffectThread(new File());
-		// postEffect.run();
-
+		System.out.println(super.getName() + " " + this.getClass() + " extracted  "
+				+ this.getFilecounter() + " files");
 	}
 
 	private void processFrame(IVideoPicture picture, BufferedImage image) {
@@ -97,7 +96,6 @@ public class ImageExtractionThread extends Thread {
 			// if it's time to write the next frame
 
 			if (picture.getPts() - mLastPtsWrite >= NANO_SECONDS_BETWEEN_FRAMES) {
-				// Make a temorary file name
 
 				// File file = File.createTempFile("frame", ".png");
 				File file =
@@ -147,7 +145,7 @@ public class ImageExtractionThread extends Thread {
 		if (!IVideoResampler.isSupported(IVideoResampler.Feature.FEATURE_COLORSPACECONVERSION))
 			throw new RuntimeException(
 					"you must install the GPL version of Xuggler (with IVideoResampler"
-							+ " support) for this demo to work");
+							+ " support) for this to work");
 
 		// create a Xuggler container object
 
@@ -232,17 +230,14 @@ public class ImageExtractionThread extends Thread {
 					// Some decoders will consume data in a packet, but will not
 					// be able to construct a full video picture yet. Therefore
 					// you should always check if you got a complete picture
-					// from
-					// the decode.
+					// from the decode.
 
 					if (picture.isComplete()) {
 						IVideoPicture newPic = picture;
 
 						// If the resampler is not null, it means we didn't get
-						// the
-						// video in BGR24 format and need to convert it into
-						// BGR24
-						// format.
+						// the video in BGR24 format and need to convert it into
+						// BGR24 format.
 
 						if (resampler != null) {
 							// we must resample
