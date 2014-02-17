@@ -1,5 +1,5 @@
-{ "printFileName" : "etikett.dat" ,
-"logFileName" : "StreamBall_log.txt" ,
+{ "goProWifiPassword" : "Chrismas2013" ,
+"logFileName" : "ImageExtraction_log.txt" ,
 "checkIntervall" : "2000" ,
 "logFileSizeInMB" : "5" ,
 "goProImageFolder" : "http://10.5.5.9:8080//DCIM//100GOPRO//",

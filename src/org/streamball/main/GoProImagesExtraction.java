@@ -19,16 +19,26 @@ import org.json.simple.JSONObject;
 import org.streamball.core.DownloadItemsThread;
 import org.streamball.core.ImageExtractionThread;
 
+/**
+ * @author Domdom
+ * 
+ *         This Program starts a thread which downloads images or movies for the
+ *         GoPro via Wifi. It also setups an TrayIcon "Menu" to send commands to
+ *         the camera.
+ * 
+ */
 public class GoProImagesExtraction {
 
 	private static String applicationDir = System.getProperty("user.dir");
 	private static String logFilePath = null;
-	private static String goProImageFolder = null;
-	private static String configFileName = "StreamBall_config.txt";
+	private static String imageCollectionPath = null;
+
+	private static String configFileName = "ImageExtraction_config.txt";
 	private static JSONConfigLoader jsonConfig = null;
 
-	public static GoProApi api = new GoProApi("Chrismas2013");
-	public static GoProHelper helper = api.getHelper();
+	public static GoProApi api;
+	private static String goProWifiPassword;
+	public static GoProHelper helper;
 
 	public static DownloadItemsThread downloadItemsThread = null;
 
@@ -36,41 +46,19 @@ public class GoProImagesExtraction {
 	private static boolean downloaderEnabled = false;
 	private static boolean startExtractionAfterDownload = false;
 
+	private static int checkNewFilesIntervall;
+	private static double imageExtractIntervall;
+	private static String startUpMode;
+
 	public static TrayIcon trayIcon = null;
 
 	public static void main(String[] args) {
 
-		// load Config
-		jsonConfig = new JSONConfigLoader(configFileName);
-		JSONObject config = jsonConfig.loadConfig();
-
-		int checkNewFilesIntervall = Integer.valueOf((String) config.get("checkIntervall"));
-		double imageExtractIntervall =
-				Double.parseDouble((String) config.get("imageExtractIntervall"));
-		String imageCollectionPath = (String) config.get("imageCollectionFolder");
-
-		String downloadImagesStr = (String) config.get("downloadImages");
-
-		if (downloadImagesStr.toLowerCase().equals("true")) {
-			downloadImages = true;
-		}
-
-		String downloaderEnabledStr = (String) config.get("downloaderEnabled");
-		if (downloaderEnabledStr.toLowerCase().equals("true")) {
-			downloaderEnabled = true;
-		}
-
-		String startExtractionAfterDownloadStr =
-				(String) config.get("startExtractionAfterDownload");
-		if (startExtractionAfterDownloadStr.toLowerCase().equals("true")) {
-			startExtractionAfterDownload = true;
-		}
-
-		// setup logFile
-		logFilePath = applicationDir + File.separator + config.get("logFileName");
-		goProImageFolder = (String) config.get("goProImageFolder");
-
+		loadConfigVariables();
 		setLogFile(logFilePath);
+
+		api = new GoProApi(goProWifiPassword);
+		helper = api.getHelper();
 
 		trayIcon = setupTrayIcon();
 
@@ -82,11 +70,10 @@ public class GoProImagesExtraction {
 		// starting with Timelapse
 		if (startCam()) {
 
-			String startUpMode = (String) config.get("startUpMode");
-			setStartUpMode(startUpMode);
+			loadTheStartUpMode();
 
 			if (downloaderEnabled) {
-				// start thread for checking new files
+				// start thread for checking new files on camera
 				try {
 
 					downloadItemsThread =
@@ -113,6 +100,42 @@ public class GoProImagesExtraction {
 
 	}
 
+	private static void loadConfigVariables() {
+
+		jsonConfig = new JSONConfigLoader(configFileName);
+		JSONObject config = jsonConfig.loadConfig();
+
+		checkNewFilesIntervall = Integer.valueOf((String) config.get("checkIntervall"));
+		imageExtractIntervall = Double.parseDouble((String) config.get("imageExtractIntervall"));
+
+		imageCollectionPath = (String) config.get("imageCollectionFolder");
+
+		String downloadImagesStr = (String) config.get("downloadImages");
+
+		if (downloadImagesStr.toLowerCase().equals("true")) {
+			downloadImages = true;
+		}
+
+		String downloaderEnabledStr = (String) config.get("downloaderEnabled");
+		if (downloaderEnabledStr.toLowerCase().equals("true")) {
+			downloaderEnabled = true;
+		}
+
+		String startExtractionAfterDownloadStr =
+				(String) config.get("startExtractionAfterDownload");
+		if (startExtractionAfterDownloadStr.toLowerCase().equals("true")) {
+			startExtractionAfterDownload = true;
+		}
+
+		goProWifiPassword = (String) config.get("goProWifiPassword");
+
+		startUpMode = (String) config.get("startUpMode");
+
+		// setup logFile
+		logFilePath = applicationDir + File.separator + config.get("logFileName");
+
+	}
+
 	private static void testingImageCapture(String destination, double imageExtractIntervall) {
 
 		try { // start decoding frames per xuggler
@@ -135,7 +158,7 @@ public class GoProImagesExtraction {
 		}
 	}
 
-	private static void setStartUpMode(String startUpMode) {
+	private static void loadTheStartUpMode() {
 
 		if (startUpMode.equals("timelapseMode")) {
 			doTimelapseMode();
