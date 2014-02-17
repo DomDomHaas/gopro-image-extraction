@@ -24,6 +24,7 @@ import org.jsoup.select.Elements;
  * @author Dominik Haas
  * 
  *         Downloads Items (Videos or Images) from the GoPro via Wifi
+ *         Connection.
  * 
  */
 public class DownloadItemsThread extends Thread {
@@ -53,6 +54,9 @@ public class DownloadItemsThread extends Thread {
 		this.directLoadImages = directLoadImages;
 
 		try {
+
+			// for my tests I had to add the port ":8080" to the url otherwise
+			// it wouldn't work
 			if (directLoadImages) {
 				goProURL = new URL("http://" + GoProApi._10_5_5_9 + ":8080/DCIM/100GOPRO");
 			} else {
@@ -60,7 +64,6 @@ public class DownloadItemsThread extends Thread {
 			}
 		} catch (MalformedURLException e) {
 			System.out.println("Error in the URL: " + GoProApi._10_5_5_9);
-			e.printStackTrace();
 		}
 
 		// load existing files
@@ -156,6 +159,17 @@ public class DownloadItemsThread extends Thread {
 		return overviewHtml;
 	}
 
+	/**
+	 * Files which aren't in the target folder will be downloaded. To check if a
+	 * large file (movie) is still being recorded, the size will be check for
+	 * several times, which a certain sleep time between
+	 * {@code sizeRecheckIntervall} .
+	 * 
+	 * @param mp4LinksOnly
+	 *            {@code true}: only mp4 files will be downloaded. {@code false}
+	 *            : only images will be downloaded
+	 * @return boolean
+	 */
 	private boolean downloadLatestFile(boolean mp4LinksOnly) {
 
 		// initial load
@@ -195,6 +209,7 @@ public class DownloadItemsThread extends Thread {
 								String destFilePath =
 										imageCollectionPath + File.separator + fileToDownload;
 
+								// here the file will be downloaded!
 								if (downloadFile(source, destFilePath)) {
 									alreadyDownloadedItemList.add(fileToDownload);
 
@@ -243,11 +258,13 @@ public class DownloadItemsThread extends Thread {
 		return false;
 	}
 
-	private boolean isFileReadyForDownload(String fileName, int currentSize) {
-
-		return false;
-	}
-
+	/**
+	 * Extracts the file names of links in a html string with Jsoup.
+	 * 
+	 * @param html
+	 * @param mp4LinksOnly
+	 * @return
+	 */
 	private String[] getFileNames(String html, boolean mp4LinksOnly) {
 
 		Document htmlDoc = Jsoup.parse(html);
@@ -274,6 +291,23 @@ public class DownloadItemsThread extends Thread {
 		return null;
 	}
 
+	/**
+	 * Extracts the sizes of the delivered file aka link names. This is sort of
+	 * sill to do, but couldn't find another possibility since they files of the
+	 * GoPro are only exposed via the overview HTML.
+	 * 
+	 * And then the HTML is inconsistent with placing the size which is
+	 * annoying!
+	 * 
+	 * AND IMPORTANT: I didn't implement the case to get the size of an image
+	 * yet... sry, was kinda busy! Essentially it would be the same logic as for
+	 * mp4 files...
+	 * 
+	 * @param html
+	 * @param mp4LinksOnly
+	 * @param fileNames
+	 * @return
+	 */
 	private int[] getSizeNumber(String html, boolean mp4LinksOnly, String[] fileNames) {
 
 		Document htmlDoc = Jsoup.parse(html);
@@ -308,15 +342,16 @@ public class DownloadItemsThread extends Thread {
 						// but gopro is to stupid to be consistent so I have to
 						// check class size OR unit
 						Element isSizeHere = maybeHere.get(i);
+
 						if (!isSizeHere.text().trim().equals("")) {
 							sizes[indexOfFileName] = Integer.parseInt(isSizeHere.text().trim());
 						} else {
 							// oooohhh this time it's the size is in the unit
 							// class... and we put a unit behind it, isn't that
-							// great?
-							// -_- ... no! idiots!
+							// great? -_- ... no! it's inconsistent!
 
 							Element isSizeThere = maybeThere.get(i);
+
 							if (!isSizeThere.text().trim().equals("")) {
 								String sizeWithUnit = isSizeThere.text();
 								String fuckingSize =
@@ -352,6 +387,13 @@ public class DownloadItemsThread extends Thread {
 		return -1;
 	}
 
+	/**
+	 * updates the {@code camFiles} Map<String, Int> with filenames and their
+	 * sizes.
+	 * 
+	 * @param html
+	 * @param mp4LinksOnly
+	 */
 	private void updateCamFileMap(String html, boolean mp4LinksOnly) {
 
 		String[] fileNames = getFileNames(html, mp4LinksOnly);

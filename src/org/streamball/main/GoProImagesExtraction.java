@@ -20,11 +20,14 @@ import org.streamball.core.DownloadItemsThread;
 import org.streamball.core.ImageExtractionThread;
 
 /**
- * @author Domdom
+ * @author Dominik Haas
  * 
  *         This Program starts a thread which downloads images or movies for the
  *         GoPro via Wifi. It also setups an TrayIcon "Menu" to send commands to
  *         the camera.
+ * 
+ *         There are some configs in the configFile to setup up this app.
+ *         Intervalls are in Millisecond ex. 1000 = 1 second
  * 
  */
 public class GoProImagesExtraction {
