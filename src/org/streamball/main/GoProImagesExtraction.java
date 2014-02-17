@@ -18,6 +18,7 @@ import org.gopro.main.GoProApi;
 import org.json.simple.JSONObject;
 import org.streamball.core.DownloadItemsThread;
 import org.streamball.core.ImageExtractionThread;
+import org.streamball.core.RecordTimingThread;
 
 /**
  * @author Dominik Haas
@@ -44,12 +45,16 @@ public class GoProImagesExtraction {
 	public static GoProHelper helper;
 
 	public static DownloadItemsThread downloadItemsThread = null;
+	public static RecordTimingThread recordTimingThread = null;
 
 	private static boolean downloadImages = false;
 	private static boolean downloaderEnabled = false;
 	private static boolean startExtractionAfterDownload = false;
+	private static boolean useRecordingCycle = false;
 
 	private static int checkNewFilesIntervall;
+	private static int recordingTime;
+	private static int sleepDuringRecording;
 	private static double imageExtractIntervall;
 	private static String startUpMode;
 
@@ -95,6 +100,25 @@ public class GoProImagesExtraction {
 							TrayIcon.MessageType.ERROR);
 				}
 			}
+
+			if (useRecordingCycle) {
+
+				try {
+					recordTimingThread =
+							new RecordTimingThread(recordingTime, sleepDuringRecording);
+					recordTimingThread.start();
+
+					trayIcon.displayMessage("StreamBall App", "Started recordTimingThread!",
+							TrayIcon.MessageType.WARNING);
+
+				} catch (Exception e) {
+					System.out.println("Error in recordTimingThread:  " + e.getMessage());
+					trayIcon.displayMessage("recordTimingThread Error",
+							"starting recordTimingThread had an Error: " + e.getMessage(),
+							TrayIcon.MessageType.ERROR);
+				}
+			}
+
 		} else {
 			System.out.println("Couldn't start the cam ");
 			trayIcon.displayMessage("ImageEffect Error", "Couldn't start the cam",
@@ -109,6 +133,8 @@ public class GoProImagesExtraction {
 		JSONObject config = jsonConfig.loadConfig();
 
 		checkNewFilesIntervall = Integer.valueOf((String) config.get("checkIntervall"));
+		recordingTime = Integer.valueOf((String) config.get("recordingTime"));
+		sleepDuringRecording = Integer.valueOf((String) config.get("sleepDuringRecording"));
 		imageExtractIntervall = Double.parseDouble((String) config.get("imageExtractIntervall"));
 
 		imageCollectionPath = (String) config.get("imageCollectionFolder");
@@ -128,6 +154,11 @@ public class GoProImagesExtraction {
 				(String) config.get("startExtractionAfterDownload");
 		if (startExtractionAfterDownloadStr.toLowerCase().equals("true")) {
 			startExtractionAfterDownload = true;
+		}
+
+		String useRecordingCycleStr = (String) config.get("useRecordingCycle");
+		if (useRecordingCycleStr.toLowerCase().equals("true")) {
+			useRecordingCycle = true;
 		}
 
 		goProWifiPassword = (String) config.get("goProWifiPassword");
@@ -181,11 +212,16 @@ public class GoProImagesExtraction {
 		api.powerOff();
 	}
 
-	private static void startRecording() {
+	public static void startRecording(String costumMsg) {
+		String msg = "Triggered Recording";
+
+		if (!costumMsg.equals("")) {
+			msg = costumMsg;
+		}
+
 		try {
 			api.startRecord();
-			trayIcon.displayMessage("StreamBall App", "Triggered Recording",
-					TrayIcon.MessageType.WARNING);
+			trayIcon.displayMessage("StreamBall App", msg, TrayIcon.MessageType.WARNING);
 		} catch (Exception e) {
 			System.out.println("Error Burst:  " + e.getMessage());
 			trayIcon.displayMessage("Error", "Start Recording Cam Error: " + e.getMessage(),
@@ -193,12 +229,15 @@ public class GoProImagesExtraction {
 		}
 	}
 
-	private static void stopRecording() {
+	public static void stopRecording(String costumMsg) {
+		String msg = "Stopped Recording";
 
+		if (!costumMsg.equals("")) {
+			msg = costumMsg;
+		}
 		try {
 			api.stopRecord();
-			trayIcon.displayMessage("StreamBall App", "Stopped Recording",
-					TrayIcon.MessageType.WARNING);
+			trayIcon.displayMessage("StreamBall App", msg, TrayIcon.MessageType.WARNING);
 		} catch (Exception e) {
 			System.out.println("Error Burst:  " + e.getMessage());
 			trayIcon.displayMessage("Error", "Stopped Recording Cam Error: " + e.getMessage(),
@@ -378,6 +417,14 @@ public class GoProImagesExtraction {
 		PopupMenu fileCheckMenu = new PopupMenu("");
 
 		// create a action listener for the MenuItems
+		ActionListener recordingThreadListener = new ActionListener() {
+
+			public void actionPerformed(ActionEvent e) {
+				if (recordTimingThread != null) {
+					recordTimingThread.doRun = false;
+				}
+			}
+		};
 
 		ActionListener startListener = new ActionListener() {
 
@@ -403,14 +450,14 @@ public class GoProImagesExtraction {
 		ActionListener startRecordListener = new ActionListener() {
 
 			public void actionPerformed(ActionEvent e) {
-				startRecording();
+				startRecording("");
 			}
 		};
 
 		ActionListener stopRecordListener = new ActionListener() {
 
 			public void actionPerformed(ActionEvent e) {
-				stopRecording();
+				stopRecording("");
 			}
 		};
 
@@ -493,6 +540,10 @@ public class GoProImagesExtraction {
 		};
 
 		// create menu item for the default action
+		MenuItem recordingThreadItem = new MenuItem("Stop RecordingThread");
+		recordingThreadItem.addActionListener(recordingThreadListener);
+		fileCheckMenu.add(recordingThreadItem);
+
 		MenuItem startItem = new MenuItem("Start Cam");
 		startItem.addActionListener(startListener);
 		fileCheckMenu.add(startItem);

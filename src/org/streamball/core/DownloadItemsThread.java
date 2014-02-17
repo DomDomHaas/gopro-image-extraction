@@ -412,7 +412,11 @@ public class DownloadItemsThread extends Thread {
 			}
 		} else {
 
-			// update sizes
+			// update only the last file because if the amount of files are the
+			// same
+			// then only the last ones size is changing (if anything changed at
+			// all)
+
 			String lastFileName = fileNames[fileNames.length - 1];
 			int sizeOfLastFile = fileSizes[fileSizes.length - 1];
 
