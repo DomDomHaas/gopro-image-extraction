@@ -1,4 +1,4 @@
-package org.streamball.additions;
+package org.goproimageextraction.additions;
 
 import java.awt.image.BufferedImage;
 import java.io.File;

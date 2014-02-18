@@ -1,6 +1,6 @@
-package org.streamball.core;
+package org.goproimageextraction.core;
 
-import org.streamball.main.GoProImagesExtraction;
+import org.goproimageextraction.main.GoProImagesExtraction;
 
 /**
  * @author Dominik Haas

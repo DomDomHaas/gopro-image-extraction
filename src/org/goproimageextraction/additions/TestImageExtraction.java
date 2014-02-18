@@ -1,10 +1,10 @@
-package org.streamball.additions;
+package org.goproimageextraction.additions;
 
 import java.io.File;
 
+import org.goproimageextraction.core.ImageExtractionThread;
+import org.goproimageextraction.main.JSONConfigLoader;
 import org.json.simple.JSONObject;
-import org.streamball.core.ImageExtractionThread;
-import org.streamball.main.JSONConfigLoader;
 
 public class TestImageExtraction {
 

@@ -1,4 +1,4 @@
-package org.streamball.main;
+package org.goproimageextraction.main;
 
 import java.awt.AWTException;
 import java.awt.Desktop;
@@ -15,10 +15,10 @@ import java.io.IOException;
 
 import org.gopro.core.GoProHelper;
 import org.gopro.main.GoProApi;
+import org.goproimageextraction.core.DownloadItemsThread;
+import org.goproimageextraction.core.ImageExtractionThread;
+import org.goproimageextraction.core.RecordTimingThread;
 import org.json.simple.JSONObject;
-import org.streamball.core.DownloadItemsThread;
-import org.streamball.core.ImageExtractionThread;
-import org.streamball.core.RecordTimingThread;
 
 /**
  * @author Dominik Haas

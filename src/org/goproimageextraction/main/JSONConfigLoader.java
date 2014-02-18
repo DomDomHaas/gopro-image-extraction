@@ -1,4 +1,4 @@
-package org.streamball.main;
+package org.goproimageextraction.main;
 
 import java.io.File;
 import java.io.IOException;

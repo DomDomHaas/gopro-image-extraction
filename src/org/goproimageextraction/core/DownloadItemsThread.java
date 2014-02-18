@@ -1,4 +1,4 @@
-package org.streamball.core;
+package org.goproimageextraction.core;
 
 import java.awt.TrayIcon;
 import java.io.BufferedReader;

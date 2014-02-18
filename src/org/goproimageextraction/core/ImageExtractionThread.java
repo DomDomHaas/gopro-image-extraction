@@ -1,4 +1,4 @@
-package org.streamball.core;
+package org.goproimageextraction.core;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
