@@ -1,7 +1,7 @@
 { "logFileName" : "ImageExtraction_log.txt" ,
 "logFileSizeInMB" : "5" ,
 "checkIntervall" : "2000" ,
-"useRecordingCycle" : "false" ,
+"useRecordingCycle" : "true" ,
 "recordingTime" : "5000" ,
 "sleepDuringRecording" : "5000" ,
 "goProWifiPassword" : "Chrismas2013" ,

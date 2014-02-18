@@ -42,8 +42,6 @@ public class DownloadItemsThread extends Thread {
 	private ArrayList<String> alreadyDownloadedItemList = new ArrayList<String>();
 	private LinkedHashMap<String, Integer> camFiles = new LinkedHashMap<String, Integer>();
 
-	private ImageExtractionManager extractionManager = new ImageExtractionManager();
-
 	public DownloadItemsThread(TrayIcon trayIcon, String imageCollectionPath, int checkIntervall,
 			double imageExtractIntervall, boolean startExtractionAfterDownload,
 			boolean directLoadImages) {
@@ -95,12 +93,10 @@ public class DownloadItemsThread extends Thread {
 	@Override
 	public void run() {
 
-		extractionManager.start();
-
 		for (;;) {
 
 			System.out.println("DownloadItemsThread " + super.getName()
-					+ " start downloading Items");
+					+ " start checking downloading Items");
 
 			if (directLoadImages == true) {
 				downloadLatestFile(false);
@@ -240,8 +236,9 @@ public class DownloadItemsThread extends Thread {
 												new ImageExtractionThread(destFilePath,
 														imageExtractIntervall);
 
+										extractImages.start();
 										// delegate to ManagerThread
-										extractionManager.addThread(extractImages);
+										// extractionManager.addThread(extractImages);
 
 									} else {
 										// start thread for image effect
@@ -421,28 +418,29 @@ public class DownloadItemsThread extends Thread {
 		String[] fileNames = getFileNames(html, mp4LinksOnly);
 		int[] fileSizes = getSizeNumber(html, mp4LinksOnly, fileNames);
 
-		// update Files
-		if (fileNames.length > camFiles.size()) {
+		if (fileNames != null && fileNames.length > 0) {
+			// update Files
+			if (fileNames.length > camFiles.size()) {
 
-			for (int i = 0; i < fileNames.length; i++) {
-				String fileName = fileNames[i];
-				int actualSize = fileSizes[i];
+				for (int i = 0; i < fileNames.length; i++) {
+					String fileName = fileNames[i];
+					int actualSize = fileSizes[i];
 
-				if (!camFiles.containsKey(fileNames.length)) {
-					camFiles.put(fileName, actualSize);
+					if (!camFiles.containsKey(fileNames.length)) {
+						camFiles.put(fileName, actualSize);
+					}
 				}
+			} else {
+
+				// update only the last file because if the amount of files are
+				// the same then only the last ones size is changing (if
+				// anything changed at all)
+
+				String lastFileName = fileNames[fileNames.length - 1];
+				int sizeOfLastFile = fileSizes[fileSizes.length - 1];
+
+				camFiles.put(lastFileName, sizeOfLastFile);
 			}
-		} else {
-
-			// update only the last file because if the amount of files are the
-			// same
-			// then only the last ones size is changing (if anything changed at
-			// all)
-
-			String lastFileName = fileNames[fileNames.length - 1];
-			int sizeOfLastFile = fileSizes[fileSizes.length - 1];
-
-			camFiles.put(lastFileName, sizeOfLastFile);
 		}
 
 	}
@@ -552,6 +550,8 @@ public class DownloadItemsThread extends Thread {
 
 		Date before = new Date();
 		try {
+			System.out.println("download: " + source);
+
 			FileUtils.copyURLToFile(source, destination);
 			Date after = new Date();
 			destination = null;

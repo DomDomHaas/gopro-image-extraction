@@ -25,25 +25,28 @@ import com.xuggle.xuggler.Utils;
  * 
  *         Only tested with mp4 files created by a GoPro Hero 3+ (Silver
  *         Edition)
+ * 
+ *         This extraction is based on the DecodeAndCaptureFrames.java demo of
+ *         Xuggler
  **/
 public class ImageExtractionThread extends Thread {
 
 	/** The number of seconds between frames. */
-	public static double SECONDS_BETWEEN_FRAMES = 0.5;
+	public double SECONDS_BETWEEN_FRAMES = 0.5;
 
 	/** The number of nano-seconds between frames. */
 
 	public long NANO_SECONDS_BETWEEN_FRAMES = 0;
 
 	/** Time of last frame write. */
-	private static long mLastPtsWrite = Global.NO_PTS;
+	private long mLastPtsWrite = Global.NO_PTS;
 
 	private String fileName;
 	private String moviePrefix;
 	private String subFolder;
 	private long filecounter = 0;
 
-	public volatile boolean isExtracting = false;
+	public volatile boolean hasStarted = false;
 	public volatile boolean extractionFinished = false;
 
 	/**
@@ -75,10 +78,11 @@ public class ImageExtractionThread extends Thread {
 	@Override
 	public void run() {
 
+		hasStarted = true;
+
 		System.out.println(super.getName() + " " + this.getClass() + " started ");
 
 		decodeVideoFile(fileName);
-		isExtracting = false;
 
 		System.out.println(super.getName() + " " + this.getClass() + " extracted  "
 				+ this.getFilecounter() + " files");
@@ -109,8 +113,10 @@ public class ImageExtractionThread extends Thread {
 				filecounter++;
 				// indicate file written
 
-				double seconds = ((double) picture.getPts()) / Global.DEFAULT_PTS_PER_SECOND;
-				System.out.printf("\n at elapsed time of %6.3f seconds wrote: %s\n", seconds, file);
+				// double seconds = ((double) picture.getPts()) /
+				// Global.DEFAULT_PTS_PER_SECOND;
+				// System.out.printf("\n at elapsed time of %6.3f seconds wrote: %s\n",
+				// seconds, file);
 
 				// start image post effect
 
@@ -205,7 +211,6 @@ public class ImageExtractionThread extends Thread {
 		}
 
 		// Now, we start walking through the container looking at each packet.
-		isExtracting = true;
 
 		IPacket packet = IPacket.make();
 		while (container.readNextPacket(packet) >= 0) {
@@ -290,10 +295,6 @@ public class ImageExtractionThread extends Thread {
 
 	public long getFilecounter() {
 		return filecounter;
-	}
-
-	public boolean isExtracting() {
-		return isExtracting;
 	}
 
 }

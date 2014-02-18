@@ -1,783 +1,1205 @@
-Uncaught error fetching image:
-java.lang.NullPointerException
-	at sun.awt.image.URLImageSource.getConnection(Unknown Source)
-	at sun.awt.image.URLImageSource.getDecoder(Unknown Source)
-	at sun.awt.image.InputStreamImageSource.doFetch(Unknown Source)
-	at sun.awt.image.ImageFetcher.fetchloop(Unknown Source)
-	at sun.awt.image.ImageFetcher.run(Unknown Source)
-Sending power on to gopro
 Cmd :http://10.5.5.9:80/bacpac/PW?t=Chrismas2013&p=%01
-Verifying if go pro is ready...
-Cmd :http://10.5.5.9:80/bacpac/se?t=Chrismas2013
-Camera ready 		? 1
 Cmd :http://10.5.5.9:80/camera/CM?t=Chrismas2013&p=%00
 DownloadItemsThread Thread-3 start downloading Items
 Cmd :http://10.5.5.9:80/bacpac/SH?t=Chrismas2013&p=%01
-Feb 05, 2014 11:03:05 AM org.apache.http.impl.client.DefaultHttpClient tryExecute
-INFO: I/O exception (java.net.SocketException) caught when processing request: Connection reset by peer: socket write error
-Feb 05, 2014 11:03:05 AM org.apache.http.impl.client.DefaultHttpClient tryExecute
-INFO: Retrying request
+Thread-5 Trigger Recording
 Cmd :http://10.5.5.9:80/bacpac/SH?t=Chrismas2013&p=%00
-Feb 05, 2014 11:05:00 AM org.apache.http.impl.client.DefaultHttpClient tryExecute
+Feb 18, 2014 2:39:09 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
 INFO: I/O exception (java.net.SocketException) caught when processing request: Connection reset by peer: socket write error
-Feb 05, 2014 11:05:00 AM org.apache.http.impl.client.DefaultHttpClient tryExecute
+Feb 18, 2014 2:39:09 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
 INFO: Retrying request
 DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of  0.000 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_0.png
+Thread-5 Stopped Recording
 DownloadItemsThread Thread-3 start downloading Items
-
- at elapsed time of  1.001 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_1.png
-
- at elapsed time of  2.002 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_2.png
-
- at elapsed time of  3.003 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_3.png
-
- at elapsed time of  4.004 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_4.png
-
- at elapsed time of  5.005 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_5.png
-
- at elapsed time of  6.006 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_6.png
-
- at elapsed time of  7.007 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_7.png
-
- at elapsed time of  8.008 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_8.png
-
- at elapsed time of  9.009 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_9.png
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 10.010 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_10.png
-DownloadItemsThread Thread-3 start downloading Items
-
- at elapsed time of 11.011 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_11.png
-
- at elapsed time of 12.012 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_12.png
-
- at elapsed time of 13.013 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_13.png
-
- at elapsed time of 14.014 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_14.png
-
- at elapsed time of 15.015 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_15.png
-
- at elapsed time of 16.016 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_16.png
-
- at elapsed time of 17.000 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_17.png
-
- at elapsed time of 18.001 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_18.png
-
- at elapsed time of 19.002 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_19.png
-
- at elapsed time of 20.003 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_20.png
-
- at elapsed time of 21.004 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_21.png
-
- at elapsed time of 22.005 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_22.png
-
- at elapsed time of 23.006 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_23.png
-
- at elapsed time of 24.007 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_24.png
-
- at elapsed time of 25.008 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_25.png
-
- at elapsed time of 26.009 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_26.png
-
- at elapsed time of 27.010 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_27.png
-
- at elapsed time of 28.011 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_28.png
-
- at elapsed time of 29.012 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_29.png
-
- at elapsed time of 30.013 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_30.png
-
- at elapsed time of 31.014 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_31.png
-
- at elapsed time of 32.015 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_32.png
-
- at elapsed time of 33.016 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_33.png
-
- at elapsed time of 34.001 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_34.png
-
- at elapsed time of 35.002 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_35.png
-
- at elapsed time of 36.003 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_36.png
-
- at elapsed time of 37.004 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_37.png
-
- at elapsed time of 38.005 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_38.png
-
- at elapsed time of 39.006 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_39.png
-
- at elapsed time of 40.007 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_40.png
-
- at elapsed time of 41.008 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_41.png
-
- at elapsed time of 42.009 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_42.png
-
- at elapsed time of 43.010 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_43.png
-
- at elapsed time of 44.011 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_44.png
-
- at elapsed time of 45.012 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_45.png
-
- at elapsed time of 46.013 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_46.png
-
- at elapsed time of 47.014 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_47.png
-
- at elapsed time of 48.015 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_48.png
-
- at elapsed time of 49.016 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_49.png
-
- at elapsed time of 50.017 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_50.png
-
- at elapsed time of 51.001 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0652_pics\GOPR0652_51.png
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 52.002 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_0.png
-
- at elapsed time of 53.003 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_1.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 54.004 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_2.png
-
- at elapsed time of 55.005 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_3.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 56.006 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_4.png
-
- at elapsed time of 57.007 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_5.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 58.008 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_6.png
-
- at elapsed time of 59.009 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_7.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 60.010 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_8.png
-
- at elapsed time of 61.011 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_9.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 62.012 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_10.png
-
- at elapsed time of 63.013 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_11.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 64.014 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_12.png
-
- at elapsed time of 65.015 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_13.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 66.016 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_14.png
-
- at elapsed time of 67.000 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_15.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 68.001 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_16.png
-
- at elapsed time of 69.002 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_17.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 70.003 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_18.png
-
- at elapsed time of 71.004 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_19.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 72.005 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_20.png
-
- at elapsed time of 73.006 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_21.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 74.007 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_22.png
-
- at elapsed time of 75.008 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_23.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 76.009 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_24.png
-
- at elapsed time of 77.010 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_25.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 78.011 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_26.png
-
- at elapsed time of 79.012 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_27.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 80.013 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_28.png
-
- at elapsed time of 81.014 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_29.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 82.015 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_30.png
-
- at elapsed time of 83.016 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_31.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 84.001 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_32.png
-DownloadItemsThread Thread-3 start downloading Items
-
- at elapsed time of 85.002 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_33.png
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 86.003 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_34.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 87.004 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_35.png
-
- at elapsed time of 88.005 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_36.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 89.006 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_37.png
-
- at elapsed time of 90.007 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_38.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 91.008 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_39.png
-
- at elapsed time of 92.009 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_40.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 93.010 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_41.png
-
- at elapsed time of 94.011 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_42.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 95.012 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_43.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 96.013 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_44.png
-
- at elapsed time of 97.014 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_45.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 98.015 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_46.png
-
- at elapsed time of 99.016 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_47.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 100.017 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_48.png
-
- at elapsed time of 101.001 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_49.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 102.002 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_50.png
-
- at elapsed time of 103.003 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_51.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 104.004 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_52.png
-DownloadItemsThread Thread-3 start downloading Items
-
- at elapsed time of 105.005 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_53.png
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 106.006 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_54.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 107.007 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_55.png
-
- at elapsed time of 108.008 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_56.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 109.009 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_57.png
-DownloadItemsThread Thread-3 start downloading Items
-
- at elapsed time of 110.010 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_58.png
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 111.011 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_59.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-
- at elapsed time of 112.012 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\newserv\StreamBall\ImageCollection\GOPR0656_pics\GOPR0656_60.png
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-DownloadItemsThread Thread-3 start downloading Items
-DownloadItemsThread Thread-3 going to sleep for 2000ms
-Cmd :http://10.5.5.9:80/bacpac/PW?t=Chrismas2013&p=%00
-Feb 05, 2014 11:24:12 AM org.apache.http.impl.client.DefaultHttpClient tryExecute
+Cmd :http://10.5.5.9:80/bacpac/SH?t=Chrismas2013&p=%01
+Feb 18, 2014 2:39:19 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
 INFO: I/O exception (java.net.SocketException) caught when processing request: Connection reset by peer: socket write error
-Feb 05, 2014 11:24:12 AM org.apache.http.impl.client.DefaultHttpClient tryExecute
+Feb 18, 2014 2:39:19 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
 INFO: Retrying request
+Thread-5 Trigger Recording
+Cmd :http://10.5.5.9:80/bacpac/SH?t=Chrismas2013&p=%00
+Feb 18, 2014 2:39:33 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
+INFO: I/O exception (java.net.SocketException) caught when processing request: Connection reset by peer: socket write error
+Feb 18, 2014 2:39:33 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
+INFO: Retrying request
+Thread-5 Stopped Recording
+Cmd :http://10.5.5.9:80/bacpac/SH?t=Chrismas2013&p=%01
+Feb 18, 2014 2:39:43 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
+INFO: I/O exception (java.net.SocketException) caught when processing request: Connection reset by peer: socket write error
+Feb 18, 2014 2:39:43 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
+INFO: Retrying request
+Thread-5 Trigger Recording
+1392730757707 Downloaded http://10.5.5.9:8080/videos/DCIM/100GOPRO/GOPR0689.MP4 in 30868 millis
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+Cmd :http://10.5.5.9:80/bacpac/SH?t=Chrismas2013&p=%00
+Feb 18, 2014 2:39:57 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
+INFO: I/O exception (java.net.SocketException) caught when processing request: Connection reset by peer: socket write error
+Feb 18, 2014 2:39:57 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
+INFO: Retrying request
+Thread-6 class org.streamball.core.ImageExtractionThread started 
+
+ at elapsed time of  0.000 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_0.png
+
+ at elapsed time of  0.250 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_1.png
+
+ at elapsed time of  0.501 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_2.png
+
+ at elapsed time of  0.751 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_3.png
+Thread-5 Stopped Recording
+
+ at elapsed time of  1.001 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_4.png
+
+ at elapsed time of  1.251 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_5.png
+
+ at elapsed time of  1.502 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_6.png
+
+ at elapsed time of  1.752 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_7.png
+
+ at elapsed time of  2.002 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_8.png
+
+ at elapsed time of  2.252 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_9.png
+
+ at elapsed time of  2.503 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_10.png
+Cmd :http://10.5.5.9:80/bacpac/SH?t=Chrismas2013&p=%01
+Feb 18, 2014 2:40:07 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
+INFO: I/O exception (java.net.SocketException) caught when processing request: Connection reset by peer: socket write error
+Feb 18, 2014 2:40:07 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
+INFO: Retrying request
+
+ at elapsed time of  2.753 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_11.png
+
+ at elapsed time of  3.003 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_12.png
+
+ at elapsed time of  3.253 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_13.png
+
+ at elapsed time of  3.504 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_14.png
+
+ at elapsed time of  3.754 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_15.png
+Thread-5 Trigger Recording
+
+ at elapsed time of  4.004 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_16.png
+
+ at elapsed time of  4.254 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_17.png
+
+ at elapsed time of  4.505 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_18.png
+
+ at elapsed time of  4.755 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_19.png
+
+ at elapsed time of  5.005 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_20.png
+
+ at elapsed time of  5.255 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_21.png
+
+ at elapsed time of  5.506 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_22.png
+
+ at elapsed time of  5.756 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_23.png
+
+ at elapsed time of  6.006 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_24.png
+
+ at elapsed time of  6.256 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_25.png
+
+ at elapsed time of  6.507 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_26.png
+
+ at elapsed time of  6.757 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_27.png
+
+ at elapsed time of  7.007 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_28.png
+Cmd :http://10.5.5.9:80/bacpac/SH?t=Chrismas2013&p=%00
+Feb 18, 2014 2:40:22 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
+INFO: I/O exception (java.net.SocketException) caught when processing request: Connection reset by peer: socket write error
+Feb 18, 2014 2:40:22 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
+INFO: Retrying request
+
+ at elapsed time of  7.257 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_29.png
+
+ at elapsed time of  7.508 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_30.png
+
+ at elapsed time of  7.758 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_31.png
+
+ at elapsed time of  8.008 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_32.png
+
+ at elapsed time of  8.258 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_33.png
+
+ at elapsed time of  8.509 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_34.png
+Thread-5 Stopped Recording
+
+ at elapsed time of  8.759 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_35.png
+
+ at elapsed time of  9.009 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_36.png
+
+ at elapsed time of  9.259 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_37.png
+
+ at elapsed time of  9.510 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_38.png
+
+ at elapsed time of  9.760 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_39.png
+
+ at elapsed time of 10.010 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_40.png
+
+ at elapsed time of 10.260 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_41.png
+Cmd :http://10.5.5.9:80/bacpac/SH?t=Chrismas2013&p=%01
+Feb 18, 2014 2:40:31 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
+INFO: I/O exception (java.net.SocketException) caught when processing request: Connection reset by peer: socket write error
+Feb 18, 2014 2:40:31 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
+INFO: Retrying request
+
+ at elapsed time of 10.511 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_42.png
+
+ at elapsed time of 10.761 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_43.png
+1392730797995 Downloaded http://10.5.5.9:8080/videos/DCIM/100GOPRO/GOPR0690.MP4 in 35865 millis
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+Thread-8 class org.streamball.core.ImageExtractionThread started 
+
+ at elapsed time of 11.011 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_44.png
+
+ at elapsed time of  0.000 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_0.png
+
+ at elapsed time of 11.261 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_45.png
+
+ at elapsed time of  0.250 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_1.png
+DownloadItemsThread Thread-3 start downloading Items
+
+ at elapsed time of 11.512 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_46.png
+
+ at elapsed time of  0.501 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_2.png
+Thread-5 Trigger Recording
+
+ at elapsed time of 11.762 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_47.png
+
+ at elapsed time of  0.751 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_3.png
+
+ at elapsed time of 12.012 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_48.png
+
+ at elapsed time of  1.001 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_4.png
+
+ at elapsed time of 12.262 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_49.png
+
+ at elapsed time of  1.251 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_5.png
+
+ at elapsed time of  1.502 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_6.png
+
+ at elapsed time of 12.513 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0689_pics\GOPR0689_50.png
+Thread-6 class org.streamball.core.ImageExtractionThread extracted  51 files
+
+ at elapsed time of  1.752 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_7.png
+
+ at elapsed time of  2.002 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_8.png
+
+ at elapsed time of  2.252 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_9.png
+
+ at elapsed time of  2.503 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_10.png
+
+ at elapsed time of  2.753 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_11.png
+
+ at elapsed time of  3.003 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_12.png
+
+ at elapsed time of  3.253 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_13.png
+
+ at elapsed time of  3.504 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_14.png
+
+ at elapsed time of  3.754 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_15.png
+
+ at elapsed time of  4.004 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_16.png
+Cmd :http://10.5.5.9:80/bacpac/SH?t=Chrismas2013&p=%00
+Feb 18, 2014 2:40:46 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
+INFO: I/O exception (java.net.SocketException) caught when processing request: Connection reset by peer: socket write error
+Feb 18, 2014 2:40:46 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
+INFO: Retrying request
+
+ at elapsed time of  4.254 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_17.png
+
+ at elapsed time of  4.505 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_18.png
+
+ at elapsed time of  4.755 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_19.png
+
+ at elapsed time of  5.005 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_20.png
+
+ at elapsed time of  5.255 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_21.png
+
+ at elapsed time of  5.506 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_22.png
+
+ at elapsed time of  5.756 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_23.png
+Thread-5 Stopped Recording
+
+ at elapsed time of  6.006 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_24.png
+
+ at elapsed time of  6.256 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_25.png
+
+ at elapsed time of  6.507 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_26.png
+
+ at elapsed time of  6.757 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_27.png
+
+ at elapsed time of  7.007 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_28.png
+
+ at elapsed time of  7.257 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_29.png
+
+ at elapsed time of  7.508 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_30.png
+
+ at elapsed time of  7.758 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_31.png
+Cmd :http://10.5.5.9:80/bacpac/SH?t=Chrismas2013&p=%01
+Feb 18, 2014 2:40:56 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
+INFO: I/O exception (java.net.SocketException) caught when processing request: Connection reset by peer: socket write error
+Feb 18, 2014 2:40:56 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
+INFO: Retrying request
+
+ at elapsed time of  8.008 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_32.png
+
+ at elapsed time of  8.258 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_33.png
+
+ at elapsed time of  8.509 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_34.png
+
+ at elapsed time of  8.759 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_35.png
+
+ at elapsed time of  9.009 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_36.png
+
+ at elapsed time of  9.259 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_37.png
+Thread-5 Trigger Recording
+
+ at elapsed time of  9.510 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_38.png
+
+ at elapsed time of  9.760 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_39.png
+
+ at elapsed time of 10.010 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_40.png
+
+ at elapsed time of 10.260 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_41.png
+
+ at elapsed time of 10.511 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_42.png
+
+ at elapsed time of 10.761 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_43.png
+
+ at elapsed time of 11.011 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_44.png
+
+ at elapsed time of 11.261 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_45.png
+
+ at elapsed time of 11.512 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_46.png
+
+ at elapsed time of 11.762 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_47.png
+
+ at elapsed time of 12.012 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_48.png
+
+ at elapsed time of 12.262 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_49.png
+
+ at elapsed time of 12.513 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_50.png
+
+ at elapsed time of 12.763 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_51.png
+
+ at elapsed time of 13.013 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0690_pics\GOPR0690_52.png
+Thread-8 class org.streamball.core.ImageExtractionThread extracted  53 files
+Cmd :http://10.5.5.9:80/bacpac/SH?t=Chrismas2013&p=%00
+Feb 18, 2014 2:41:10 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
+INFO: I/O exception (java.net.SocketException) caught when processing request: Connection reset by peer: socket write error
+Feb 18, 2014 2:41:10 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
+INFO: Retrying request
+Thread-5 Stopped Recording
+Cmd :http://10.5.5.9:80/bacpac/SH?t=Chrismas2013&p=%01
+Feb 18, 2014 2:41:20 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
+INFO: I/O exception (java.net.SocketException) caught when processing request: Connection reset by peer: socket write error
+Feb 18, 2014 2:41:20 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
+INFO: Retrying request
+1392730839287 Downloaded http://10.5.5.9:8080/videos/DCIM/100GOPRO/GOPR0691.MP4 in 41745 millis
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+Thread-10 class org.streamball.core.ImageExtractionThread started 
+
+ at elapsed time of  0.000 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_0.png
+
+ at elapsed time of  0.250 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_1.png
+
+ at elapsed time of  0.501 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_2.png
+DownloadItemsThread Thread-3 start downloading Items
+
+ at elapsed time of  0.751 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_3.png
+
+ at elapsed time of  1.001 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_4.png
+
+ at elapsed time of  1.251 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_5.png
+Thread-5 Trigger Recording
+
+ at elapsed time of  1.502 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_6.png
+
+ at elapsed time of  1.752 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_7.png
+
+ at elapsed time of  2.002 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_8.png
+
+ at elapsed time of  2.252 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_9.png
+
+ at elapsed time of  2.503 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_10.png
+
+ at elapsed time of  2.753 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_11.png
+
+ at elapsed time of  3.003 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_12.png
+
+ at elapsed time of  3.253 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_13.png
+
+ at elapsed time of  3.504 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_14.png
+
+ at elapsed time of  3.754 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_15.png
+
+ at elapsed time of  4.004 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_16.png
+
+ at elapsed time of  4.254 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_17.png
+
+ at elapsed time of  4.505 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_18.png
+
+ at elapsed time of  4.755 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_19.png
+
+ at elapsed time of  5.005 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_20.png
+Cmd :http://10.5.5.9:80/bacpac/SH?t=Chrismas2013&p=%00
+Feb 18, 2014 2:41:35 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
+INFO: I/O exception (java.net.SocketException) caught when processing request: Connection reset by peer: socket write error
+Feb 18, 2014 2:41:35 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
+INFO: Retrying request
+
+ at elapsed time of  5.255 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_21.png
+
+ at elapsed time of  5.506 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_22.png
+
+ at elapsed time of  5.756 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_23.png
+
+ at elapsed time of  6.006 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_24.png
+
+ at elapsed time of  6.256 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_25.png
+
+ at elapsed time of  6.507 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_26.png
+
+ at elapsed time of  6.757 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_27.png
+Thread-5 Stopped Recording
+
+ at elapsed time of  7.007 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_28.png
+
+ at elapsed time of  7.257 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_29.png
+
+ at elapsed time of  7.508 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_30.png
+
+ at elapsed time of  7.758 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_31.png
+
+ at elapsed time of  8.008 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_32.png
+
+ at elapsed time of  8.258 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_33.png
+
+ at elapsed time of  8.509 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_34.png
+
+ at elapsed time of  8.759 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_35.png
+Cmd :http://10.5.5.9:80/bacpac/SH?t=Chrismas2013&p=%01
+Feb 18, 2014 2:41:44 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
+INFO: I/O exception (java.net.SocketException) caught when processing request: Connection reset by peer: socket write error
+Feb 18, 2014 2:41:44 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
+INFO: Retrying request
+
+ at elapsed time of  9.009 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_36.png
+
+ at elapsed time of  9.259 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_37.png
+
+ at elapsed time of  9.510 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_38.png
+
+ at elapsed time of  9.760 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_39.png
+
+ at elapsed time of 10.010 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_40.png
+
+ at elapsed time of 10.260 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_41.png
+Thread-5 Trigger Recording
+
+ at elapsed time of 10.511 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_42.png
+
+ at elapsed time of 10.761 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_43.png
+
+ at elapsed time of 11.011 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_44.png
+
+ at elapsed time of 11.261 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_45.png
+
+ at elapsed time of 11.512 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_46.png
+
+ at elapsed time of 11.762 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_47.png
+
+ at elapsed time of 12.012 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_48.png
+
+ at elapsed time of 12.262 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_49.png
+
+ at elapsed time of 12.513 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_50.png
+
+ at elapsed time of 12.763 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_51.png
+
+ at elapsed time of 13.013 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0691_pics\GOPR0691_52.png
+Thread-10 class org.streamball.core.ImageExtractionThread extracted  53 files
+Cmd :http://10.5.5.9:80/bacpac/SH?t=Chrismas2013&p=%00
+Feb 18, 2014 2:41:59 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
+INFO: I/O exception (java.net.SocketException) caught when processing request: Connection reset by peer: socket write error
+Feb 18, 2014 2:41:59 PM org.apache.http.impl.client.DefaultHttpClient tryExecute
+INFO: Retrying request
+Thread-5 Stopped Recording
+1392730885228 Downloaded http://10.5.5.9:8080/videos/DCIM/100GOPRO/GOPR0692.MP4 in 44424 millis
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+Thread-12 class org.streamball.core.ImageExtractionThread started 
+
+ at elapsed time of  0.000 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_0.png
+
+ at elapsed time of  0.250 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_1.png
+DownloadItemsThread Thread-3 start downloading Items
+
+ at elapsed time of  0.501 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_2.png
+
+ at elapsed time of  0.751 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_3.png
+
+ at elapsed time of  1.001 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_4.png
+
+ at elapsed time of  1.251 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_5.png
+
+ at elapsed time of  1.502 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_6.png
+
+ at elapsed time of  1.752 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_7.png
+
+ at elapsed time of  2.002 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_8.png
+
+ at elapsed time of  2.252 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_9.png
+
+ at elapsed time of  2.503 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_10.png
+
+ at elapsed time of  2.753 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_11.png
+
+ at elapsed time of  3.003 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_12.png
+
+ at elapsed time of  3.253 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_13.png
+
+ at elapsed time of  3.504 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_14.png
+
+ at elapsed time of  3.754 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_15.png
+
+ at elapsed time of  4.004 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_16.png
+
+ at elapsed time of  4.254 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_17.png
+
+ at elapsed time of  4.505 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_18.png
+
+ at elapsed time of  4.755 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_19.png
+
+ at elapsed time of  5.005 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_20.png
+
+ at elapsed time of  5.255 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_21.png
+
+ at elapsed time of  5.506 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_22.png
+
+ at elapsed time of  5.756 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_23.png
+
+ at elapsed time of  6.006 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_24.png
+
+ at elapsed time of  6.256 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_25.png
+
+ at elapsed time of  6.507 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_26.png
+
+ at elapsed time of  6.757 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_27.png
+
+ at elapsed time of  7.007 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_28.png
+
+ at elapsed time of  7.257 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_29.png
+1392730934091 Downloaded http://10.5.5.9:8080/videos/DCIM/100GOPRO/GOPR0693.MP4 in 19988 millis
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+Thread-14 class org.streamball.core.ImageExtractionThread started 
+
+ at elapsed time of  7.508 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_30.png
+
+ at elapsed time of  0.000 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_0.png
+
+ at elapsed time of  7.758 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_31.png
+
+ at elapsed time of  0.250 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_1.png
+DownloadItemsThread Thread-3 start downloading Items
+
+ at elapsed time of  8.008 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_32.png
+
+ at elapsed time of  0.501 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_2.png
+
+ at elapsed time of  8.258 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_33.png
+
+ at elapsed time of  0.751 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_3.png
+
+ at elapsed time of  8.509 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_34.png
+
+ at elapsed time of  1.001 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_4.png
+
+ at elapsed time of  8.759 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_35.png
+
+ at elapsed time of  1.251 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_5.png
+
+ at elapsed time of  9.009 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_36.png
+
+ at elapsed time of  1.502 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_6.png
+
+ at elapsed time of  9.259 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_37.png
+
+ at elapsed time of  1.752 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_7.png
+
+ at elapsed time of  9.510 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_38.png
+
+ at elapsed time of  2.002 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_8.png
+
+ at elapsed time of  9.760 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_39.png
+
+ at elapsed time of  2.252 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_9.png
+
+ at elapsed time of 10.010 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_40.png
+
+ at elapsed time of  2.503 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_10.png
+
+ at elapsed time of 10.260 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_41.png
+
+ at elapsed time of  2.753 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_11.png
+
+ at elapsed time of 10.511 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_42.png
+
+ at elapsed time of  3.003 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_12.png
+
+ at elapsed time of 10.761 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_43.png
+
+ at elapsed time of  3.253 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_13.png
+
+ at elapsed time of 11.011 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_44.png
+
+ at elapsed time of  3.504 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_14.png
+
+ at elapsed time of 11.261 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_45.png
+
+ at elapsed time of  3.754 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_15.png
+
+ at elapsed time of 11.512 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_46.png
+
+ at elapsed time of  4.004 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_16.png
+
+ at elapsed time of 11.762 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_47.png
+
+ at elapsed time of  4.254 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_17.png
+
+ at elapsed time of 12.012 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_48.png
+
+ at elapsed time of  4.505 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_18.png
+
+ at elapsed time of 12.262 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_49.png
+
+ at elapsed time of  4.755 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_19.png
+
+ at elapsed time of 12.513 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_50.png
+
+ at elapsed time of  5.005 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_20.png
+
+ at elapsed time of 12.763 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_51.png
+
+ at elapsed time of  5.255 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_21.png
+
+ at elapsed time of 13.013 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0692_pics\GOPR0692_52.png
+Thread-12 class org.streamball.core.ImageExtractionThread extracted  53 files
+
+ at elapsed time of  5.506 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_22.png
+
+ at elapsed time of  5.756 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_23.png
+
+ at elapsed time of  6.006 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_24.png
+
+ at elapsed time of  6.256 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_25.png
+
+ at elapsed time of  6.507 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_26.png
+1392730958392 Downloaded http://10.5.5.9:8080/videos/DCIM/100GOPRO/GOPR0694.MP4 in 20606 millis
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+Thread-16 class org.streamball.core.ImageExtractionThread started 
+
+ at elapsed time of  0.000 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_0.png
+
+ at elapsed time of  6.757 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_27.png
+
+ at elapsed time of  0.250 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_1.png
+
+ at elapsed time of  7.007 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_28.png
+DownloadItemsThread Thread-3 start downloading Items
+
+ at elapsed time of  0.501 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_2.png
+
+ at elapsed time of  7.257 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_29.png
+
+ at elapsed time of  0.751 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_3.png
+
+ at elapsed time of  7.508 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_30.png
+
+ at elapsed time of  7.758 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_31.png
+
+ at elapsed time of  1.001 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_4.png
+
+ at elapsed time of  8.008 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_32.png
+
+ at elapsed time of  1.251 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_5.png
+
+ at elapsed time of  8.258 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_33.png
+
+ at elapsed time of  1.502 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_6.png
+
+ at elapsed time of  8.509 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_34.png
+
+ at elapsed time of  1.752 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_7.png
+
+ at elapsed time of  2.002 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_8.png
+
+ at elapsed time of  8.759 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_35.png
+
+ at elapsed time of  9.009 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_36.png
+
+ at elapsed time of  2.252 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_9.png
+
+ at elapsed time of  9.259 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_37.png
+
+ at elapsed time of  2.503 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_10.png
+
+ at elapsed time of  9.510 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_38.png
+
+ at elapsed time of  2.753 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_11.png
+
+ at elapsed time of  9.760 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_39.png
+
+ at elapsed time of  3.003 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_12.png
+
+ at elapsed time of 10.010 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_40.png
+
+ at elapsed time of  3.253 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_13.png
+
+ at elapsed time of 10.260 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_41.png
+
+ at elapsed time of  3.504 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_14.png
+
+ at elapsed time of  3.754 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_15.png
+
+ at elapsed time of 10.511 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_42.png
+
+ at elapsed time of  4.004 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_16.png
+
+ at elapsed time of 10.761 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_43.png
+
+ at elapsed time of  4.254 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_17.png
+
+ at elapsed time of 11.011 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_44.png
+
+ at elapsed time of 11.261 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_45.png
+
+ at elapsed time of  4.505 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_18.png
+
+ at elapsed time of 11.512 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_46.png
+
+ at elapsed time of  4.755 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_19.png
+
+ at elapsed time of 11.762 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_47.png
+
+ at elapsed time of  5.005 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_20.png
+
+ at elapsed time of 12.012 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_48.png
+
+ at elapsed time of  5.255 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_21.png
+
+ at elapsed time of 12.262 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_49.png
+
+ at elapsed time of  5.506 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_22.png
+
+ at elapsed time of 12.513 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_50.png
+
+ at elapsed time of  5.756 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_23.png
+1392730983306 Downloaded http://10.5.5.9:8080/videos/DCIM/100GOPRO/GOPR0695.MP4 in 20128 millis
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+Thread-18 class org.streamball.core.ImageExtractionThread started 
+
+ at elapsed time of  6.006 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_24.png
+
+ at elapsed time of 12.763 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_51.png
+
+ at elapsed time of  0.000 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_0.png
+
+ at elapsed time of 13.013 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0693_pics\GOPR0693_52.png
+
+ at elapsed time of  6.256 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_25.png
+Thread-14 class org.streamball.core.ImageExtractionThread extracted  53 files
+
+ at elapsed time of  0.250 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_1.png
+DownloadItemsThread Thread-3 start downloading Items
+
+ at elapsed time of  0.501 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_2.png
+
+ at elapsed time of  6.507 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_26.png
+
+ at elapsed time of  0.751 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_3.png
+
+ at elapsed time of  6.757 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_27.png
+
+ at elapsed time of  1.001 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_4.png
+
+ at elapsed time of  7.007 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_28.png
+
+ at elapsed time of  1.251 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_5.png
+
+ at elapsed time of  1.502 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_6.png
+
+ at elapsed time of  7.257 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_29.png
+
+ at elapsed time of  1.752 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_7.png
+
+ at elapsed time of  7.508 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_30.png
+
+ at elapsed time of  2.002 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_8.png
+
+ at elapsed time of  2.252 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_9.png
+
+ at elapsed time of  7.758 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_31.png
+
+ at elapsed time of  2.503 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_10.png
+
+ at elapsed time of  8.008 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_32.png
+
+ at elapsed time of  2.753 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_11.png
+
+ at elapsed time of  8.258 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_33.png
+
+ at elapsed time of  3.003 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_12.png
+
+ at elapsed time of  3.253 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_13.png
+
+ at elapsed time of  8.509 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_34.png
+
+ at elapsed time of  3.504 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_14.png
+
+ at elapsed time of  8.759 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_35.png
+
+ at elapsed time of  3.754 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_15.png
+
+ at elapsed time of  4.004 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_16.png
+
+ at elapsed time of  9.009 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_36.png
+
+ at elapsed time of  4.254 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_17.png
+
+ at elapsed time of  9.259 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_37.png
+
+ at elapsed time of  4.505 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_18.png
+
+ at elapsed time of  9.510 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_38.png
+
+ at elapsed time of  4.755 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_19.png
+
+ at elapsed time of  5.005 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_20.png
+
+ at elapsed time of  9.760 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_39.png
+
+ at elapsed time of  5.255 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_21.png
+
+ at elapsed time of 10.010 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_40.png
+
+ at elapsed time of  5.506 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_22.png
+
+ at elapsed time of  5.756 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_23.png
+
+ at elapsed time of 10.260 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_41.png
+
+ at elapsed time of  6.006 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_24.png
+
+ at elapsed time of 10.511 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_42.png
+
+ at elapsed time of  6.256 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_25.png
+
+ at elapsed time of 10.761 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_43.png
+
+ at elapsed time of  6.507 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_26.png
+
+ at elapsed time of  6.757 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_27.png
+
+ at elapsed time of 11.011 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_44.png
+
+ at elapsed time of  7.007 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_28.png
+
+ at elapsed time of 11.261 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_45.png
+
+ at elapsed time of  7.257 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_29.png
+
+ at elapsed time of  7.508 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_30.png
+
+ at elapsed time of 11.512 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_46.png
+
+ at elapsed time of  7.758 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_31.png
+
+ at elapsed time of 11.762 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_47.png
+
+ at elapsed time of  8.008 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_32.png
+
+ at elapsed time of 12.012 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_48.png
+
+ at elapsed time of  8.258 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_33.png
+1392731007809 Downloaded http://10.5.5.9:8080/videos/DCIM/100GOPRO/GOPR0696.MP4 in 20197 millis
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+Thread-20 class org.streamball.core.ImageExtractionThread started 
+
+ at elapsed time of 12.262 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_49.png
+
+ at elapsed time of  0.000 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_0.png
+
+ at elapsed time of  8.509 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_34.png
+
+ at elapsed time of  0.250 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_1.png
+
+ at elapsed time of 12.513 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_50.png
+
+ at elapsed time of  8.759 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_35.png
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+
+ at elapsed time of  0.501 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_2.png
+
+ at elapsed time of 12.763 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_51.png
+
+ at elapsed time of  9.009 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_36.png
+
+ at elapsed time of  0.751 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_3.png
+
+ at elapsed time of  9.259 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_37.png
+
+ at elapsed time of 13.013 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0694_pics\GOPR0694_52.png
+Thread-16 class org.streamball.core.ImageExtractionThread extracted  53 files
+
+ at elapsed time of  1.001 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_4.png
+
+ at elapsed time of  9.510 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_38.png
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+
+ at elapsed time of  1.251 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_5.png
+
+ at elapsed time of  9.760 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_39.png
+
+ at elapsed time of  1.502 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_6.png
+
+ at elapsed time of 10.010 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_40.png
+
+ at elapsed time of  1.752 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_7.png
+
+ at elapsed time of 10.260 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_41.png
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+
+ at elapsed time of  2.002 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_8.png
+
+ at elapsed time of 10.511 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_42.png
+
+ at elapsed time of  2.252 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_9.png
+
+ at elapsed time of 10.761 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_43.png
+
+ at elapsed time of  2.503 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_10.png
+
+ at elapsed time of 11.011 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_44.png
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+
+ at elapsed time of  2.753 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_11.png
+
+ at elapsed time of 11.261 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_45.png
+
+ at elapsed time of  3.003 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_12.png
+
+ at elapsed time of 11.512 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_46.png
+
+ at elapsed time of  3.253 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_13.png
+
+ at elapsed time of 11.762 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_47.png
+
+ at elapsed time of  3.504 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_14.png
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+
+ at elapsed time of 12.012 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_48.png
+
+ at elapsed time of  3.754 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_15.png
+
+ at elapsed time of 12.262 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_49.png
+
+ at elapsed time of  4.004 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_16.png
+
+ at elapsed time of 12.513 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_50.png
+
+ at elapsed time of  4.254 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_17.png
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+
+ at elapsed time of 12.763 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_51.png
+
+ at elapsed time of  4.505 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_18.png
+
+ at elapsed time of 13.013 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0695_pics\GOPR0695_52.png
+Thread-18 class org.streamball.core.ImageExtractionThread extracted  53 files
+
+ at elapsed time of  4.755 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_19.png
+
+ at elapsed time of  5.005 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_20.png
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+
+ at elapsed time of  5.255 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_21.png
+
+ at elapsed time of  5.506 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_22.png
+
+ at elapsed time of  5.756 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_23.png
+DownloadItemsThread Thread-3 start downloading Items
+
+ at elapsed time of  6.006 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_24.png
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+
+ at elapsed time of  6.256 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_25.png
+
+ at elapsed time of  6.507 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_26.png
+
+ at elapsed time of  6.757 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_27.png
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+
+ at elapsed time of  7.007 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_28.png
+
+ at elapsed time of  7.257 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_29.png
+
+ at elapsed time of  7.508 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_30.png
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+
+ at elapsed time of  7.758 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_31.png
+
+ at elapsed time of  8.008 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_32.png
+
+ at elapsed time of  8.258 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_33.png
+DownloadItemsThread Thread-3 start downloading Items
+
+ at elapsed time of  8.509 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_34.png
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+
+ at elapsed time of  8.759 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_35.png
+
+ at elapsed time of  9.009 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_36.png
+
+ at elapsed time of  9.259 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_37.png
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+
+ at elapsed time of  9.510 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_38.png
+
+ at elapsed time of  9.760 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_39.png
+
+ at elapsed time of 10.010 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_40.png
+DownloadItemsThread Thread-3 start downloading Items
+
+ at elapsed time of 10.260 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_41.png
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+
+ at elapsed time of 10.511 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_42.png
+
+ at elapsed time of 10.761 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_43.png
+
+ at elapsed time of 11.011 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_44.png
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+
+ at elapsed time of 11.261 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_45.png
+
+ at elapsed time of 11.512 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_46.png
+
+ at elapsed time of 11.762 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_47.png
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+
+ at elapsed time of 12.012 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_48.png
+
+ at elapsed time of 12.262 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_49.png
+
+ at elapsed time of 12.513 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_50.png
+
+ at elapsed time of 12.763 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_51.png
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+
+ at elapsed time of 13.013 seconds wrote: D:\Program Files (x86)\eclipse_workspaces\GoProImageExtraction\ImageCollection\GOPR0696_pics\GOPR0696_52.png
+Thread-20 class org.streamball.core.ImageExtractionThread extracted  53 files
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
+DownloadItemsThread Thread-3 start downloading Items
+DownloadItemsThread Thread-3 going to sleep for 2000ms
 DownloadItemsThread Thread-3 start downloading Items
 DownloadItemsThread Thread-3 going to sleep for 2000ms
 DownloadItemsThread Thread-3 start downloading Items

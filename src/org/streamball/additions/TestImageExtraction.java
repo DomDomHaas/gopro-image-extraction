@@ -8,7 +8,7 @@ import org.streamball.main.JSONConfigLoader;
 
 public class TestImageExtraction {
 
-	private static String configFileName = "StreamBall_config.txt";
+	private static String configFileName = "ImageExtraction_config.txt";
 
 	public static void main(String[] args) {
 
@@ -35,7 +35,7 @@ public class TestImageExtraction {
 
 		while (imageExt.getState() != Thread.State.TERMINATED) {
 
-			System.out.println("is extracting: " + imageExt.isExtracting());
+			System.out.println("extractFinished: " + imageExt.extractionFinished);
 			System.out.println("filecounter: " + imageExt.getFilecounter());
 
 			try {
