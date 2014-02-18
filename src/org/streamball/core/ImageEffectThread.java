@@ -4,13 +4,20 @@ import java.io.File;
 
 import kanzi.InputBitStream;
 
+/**
+ * @author Dominik Haas
+ * 
+ *         This Thread is supposed to add an image effect to every image in a
+ *         given Folder
+ * 
+ */
 public class ImageEffectThread extends Thread {
 
-	private File image;
+	private File imageFolder;
 
-	public ImageEffectThread(String image) {
+	public ImageEffectThread(String imageFolder) {
 
-		this.image = new File(image);
+		this.imageFolder = new File(imageFolder);
 	}
 
 	@Override
@@ -21,11 +28,20 @@ public class ImageEffectThread extends Thread {
 
 	private void applyImageEffect() {
 
-		InputBitStream inStream;// = new Inputbi
+		// load each file
 
-		// SobelFilter sobel = new SobelFilter();
-		// setup kanzi
+		File[] files = this.imageFolder.listFiles();
 
-		// apply filter?!
+		for (int i = 0; i < files.length; i++) {
+
+			InputBitStream inStream;// = new Inputbi
+
+			// SobelFilter sobel = new SobelFilter();
+			// setup kanzi
+
+			// apply filter?!
+
+		}
+
 	}
 }

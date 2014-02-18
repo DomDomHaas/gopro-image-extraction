@@ -79,10 +79,11 @@ public class ImageExtractionThread extends Thread {
 
 		decodeVideoFile(fileName);
 		isExtracting = false;
-		extractionFinished = true;
 
 		System.out.println(super.getName() + " " + this.getClass() + " extracted  "
 				+ this.getFilecounter() + " files");
+
+		extractionFinished = true;
 	}
 
 	private void processFrame(IVideoPicture picture, BufferedImage image) {

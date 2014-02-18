@@ -14,10 +14,8 @@ import org.json.simple.parser.ParseException;
 /**
  * @author Dominik Haas
  * 
- * 
- *         loads a JSON config definition out of the given file.
- * 
- *         uses the json-simple-1.1.1.jar
+ *         loads a JSON config definition out of the given file. uses the
+ *         json-simple-1.1.1.jar
  */
 public class JSONConfigLoader {
 

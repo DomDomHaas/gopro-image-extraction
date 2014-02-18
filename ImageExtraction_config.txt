@@ -2,7 +2,7 @@
 "logFileSizeInMB" : "5" ,
 "checkIntervall" : "2000" ,
 "useRecordingCycle" : "false" ,
-"recordingTime" : "2000" ,
+"recordingTime" : "5000" ,
 "sleepDuringRecording" : "5000" ,
 "goProWifiPassword" : "Chrismas2013" ,
 "goProImageFolder" : "http://10.5.5.9:8080//DCIM//100GOPRO//",
@@ -10,6 +10,6 @@
 "downloaderEnabled" : "true",
 "downloadImages" : "false",
 "startExtractionAfterDownload" : "true",
-"imageExtractIntervall" : "0.1", 
+"imageExtractIntervall" : "0.25", 
 "startUpMode" : "recordMode"
 }
